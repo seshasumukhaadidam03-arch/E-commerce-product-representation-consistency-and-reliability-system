@@ -1,0 +1,450 @@
+{
+  "total_products": 25,
+  "correct_predictions": 16,
+  "accuracy": 64.0,
+  "macro_f1": 0.605,
+  "per_class_metrics": {
+    "CONSISTENT": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.667,
+      "support": 10
+    },
+    "CONTRADICTORY": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1": 0.8,
+      "support": 5
+    },
+    "MIXED EVIDENCE": {
+      "precision": 0.5,
+      "recall": 0.2,
+      "f1": 0.286,
+      "support": 5
+    },
+    "INSUFFICIENT EVIDENCE": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.667,
+      "support": 5
+    }
+  },
+  "confusion_matrix": {
+    "CONSISTENT": {
+      "CONSISTENT": 6,
+      "CONTRADICTORY": 0,
+      "MIXED EVIDENCE": 0,
+      "INSUFFICIENT EVIDENCE": 4
+    },
+    "CONTRADICTORY": {
+      "CONSISTENT": 0,
+      "CONTRADICTORY": 4,
+      "MIXED EVIDENCE": 1,
+      "INSUFFICIENT EVIDENCE": 0
+    },
+    "MIXED EVIDENCE": {
+      "CONSISTENT": 2,
+      "CONTRADICTORY": 1,
+      "MIXED EVIDENCE": 1,
+      "INSUFFICIENT EVIDENCE": 1
+    },
+    "INSUFFICIENT EVIDENCE": {
+      "CONSISTENT": 0,
+      "CONTRADICTORY": 0,
+      "MIXED EVIDENCE": 0,
+      "INSUFFICIENT EVIDENCE": 5
+    }
+  },
+  "detailed_results": [
+    {
+      "product_id": "bench_c01",
+      "title": "Minimalist RFID Slim Front Pocket Bifold Wallet",
+      "category": "Accessories",
+      "ground_truth": "CONSISTENT",
+      "predicted": "CONSISTENT",
+      "match": true,
+      "overall_pri": 97.4,
+      "text_pri": 96.5,
+      "visual_pri": 100.0,
+      "coverage": 0.75,
+      "claims_count": 4,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_c02",
+      "title": "Anker USB-C Fast Charger 30W Compact Adapter",
+      "category": "Electronics",
+      "ground_truth": "CONSISTENT",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": false,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 0,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_c03",
+      "title": "Stainless Steel Double-Wall Vacuum Insulated Water Bottle 750ml",
+      "category": "Home & Kitchen",
+      "ground_truth": "CONSISTENT",
+      "predicted": "CONSISTENT",
+      "match": true,
+      "overall_pri": 90.0,
+      "text_pri": 90.0,
+      "visual_pri": null,
+      "coverage": 0.5,
+      "claims_count": 2,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_c04",
+      "title": "Natural Boar Bristle Hair Brush with Ergonomic Bamboo Handle",
+      "category": "Grooming",
+      "ground_truth": "CONSISTENT",
+      "predicted": "CONSISTENT",
+      "match": true,
+      "overall_pri": 100.0,
+      "text_pri": 100.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_c05",
+      "title": "Men's Breathable Mesh Running Shoes Lightweight Athletic Sneakers",
+      "category": "Footwear",
+      "ground_truth": "CONSISTENT",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": false,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 0,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_c06",
+      "title": "Hardcover Dotted Grid Journal 160 GSM Bleedproof Paper",
+      "category": "Stationery",
+      "ground_truth": "CONSISTENT",
+      "predicted": "CONSISTENT",
+      "match": true,
+      "overall_pri": 100.0,
+      "text_pri": 100.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_c07",
+      "title": "Heavy Duty Cast Iron Skillet Pre-Seasoned 10-Inch",
+      "category": "Kitchen",
+      "ground_truth": "CONSISTENT",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": false,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_c08",
+      "title": "Braided 4K 60Hz HDMI 2.0 Cable 6 Feet Gold-Plated Connectors",
+      "category": "Electronics",
+      "ground_truth": "CONSISTENT",
+      "predicted": "CONSISTENT",
+      "match": true,
+      "overall_pri": 100.0,
+      "text_pri": 100.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_c09",
+      "title": "High Density Non-Slip Yoga Mat 6mm with Carrying Strap",
+      "category": "Sports",
+      "ground_truth": "CONSISTENT",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": false,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 0,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_c10",
+      "title": "100% Combed Cotton Crewneck T-Shirt Pre-Shrunk",
+      "category": "Apparel",
+      "ground_truth": "CONSISTENT",
+      "predicted": "CONSISTENT",
+      "match": true,
+      "overall_pri": 100.0,
+      "text_pri": 100.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_k01",
+      "title": "Waterproof Shower Cap with Leakproof Silicone Forehead Seal",
+      "category": "Bath",
+      "ground_truth": "CONTRADICTORY",
+      "predicted": "CONTRADICTORY",
+      "match": true,
+      "overall_pri": 0.0,
+      "text_pri": 0.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 3,
+      "discrepancies": [
+        "Claim '% waterproof double layer nylon material.' contradicted by customer feedback: \"Not waterproof at all, the silicone band does not seal and leaks\"",
+        "Claim '% waterproof double layer nylon material.' contradicted by customer feedback: \"Water seeped through the seams immediately, hair got completely soaked\"",
+        "Claim 'Leakproof silicone seal keeps hair completely dry.' contradicted by customer feedback: \"Water seeped through the seams immediately, hair got completely soaked\"",
+        "Claim 'Leakproof silicone seal keeps hair completely dry.' contradicted by customer feedback: \"Not waterproof at all, the silicone band does not seal and leaks\"",
+        "Claim 'Durable elastic band fits all head sizes.' contradicted by customer feedback: \"The elastic band snapped on the third day of use\""
+      ]
+    },
+    {
+      "product_id": "bench_k02",
+      "title": "Genuine Full Grain Leather Messenger Laptop Bag 15.6 Inch",
+      "category": "Accessories",
+      "ground_truth": "CONTRADICTORY",
+      "predicted": "CONTRADICTORY",
+      "match": true,
+      "overall_pri": 0.0,
+      "text_pri": 0.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Claim '% authentic full grain cowhide leather.' contradicted by customer feedback: \"This is cheap synthetic PU plastic leather, not genuine cowhide\""
+      ]
+    },
+    {
+      "product_id": "bench_k03",
+      "title": "Wireless Earbuds 40-Hour Battery Life with Active Noise Cancellation",
+      "category": "Electronics",
+      "ground_truth": "CONTRADICTORY",
+      "predicted": "MIXED EVIDENCE",
+      "match": false,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 2,
+      "discrepancies": [
+        "Claim 'hours total playtime with charging case.' contradicted by customer feedback: \"Battery barely lasts 3 hours on a full charge, nowhere near 40 hours\""
+      ]
+    },
+    {
+      "product_id": "bench_k04",
+      "title": "Non-Stick Ceramic Frying Pan Scratch Resistant PTFE Free",
+      "category": "Kitchen",
+      "ground_truth": "CONTRADICTORY",
+      "predicted": "CONTRADICTORY",
+      "match": true,
+      "overall_pri": 0.0,
+      "text_pri": 0.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Claim 'Ultra-durable scratch resistant ceramic coating.' contradicted by customer feedback: \"The coating scratched immediately when using a normal wooden spatula\"",
+        "Claim 'Ultra-durable scratch resistant ceramic coating.' contradicted by customer feedback: \"Everything sticks to this pan, food burned onto the ceramic surface\""
+      ]
+    },
+    {
+      "product_id": "bench_k05",
+      "title": "100% Blackout Thermal Insulated Window Curtains Set of 2",
+      "category": "Home",
+      "ground_truth": "CONTRADICTORY",
+      "predicted": "CONTRADICTORY",
+      "match": true,
+      "overall_pri": 0.0,
+      "text_pri": 0.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Claim 'Machine washable without fading.' contradicted by customer feedback: \"Sunlight shines right through the thin fabric, definitely not 100% blackout\""
+      ]
+    },
+    {
+      "product_id": "bench_m01",
+      "title": "Rigohill Doger Olive Green RFID Leather Wallet for Men",
+      "category": "Accessories",
+      "ground_truth": "MIXED EVIDENCE",
+      "predicted": "MIXED EVIDENCE",
+      "match": true,
+      "overall_pri": 53.9,
+      "text_pri": 53.9,
+      "visual_pri": null,
+      "coverage": 0.75,
+      "claims_count": 4,
+      "discrepancies": [
+        "Claim 'The wallet is made of natural genuine leather.' contradicted by customer feedback: \"Leather quality not good at all, feels very cheap and flimsy\"",
+        "Claim 'Durable craftsmanship with sturdy stitching.' contradicted by customer feedback: \"Leather quality not good at all, feels very cheap and flimsy\""
+      ]
+    },
+    {
+      "product_id": "bench_m02",
+      "title": "Mechanical Gaming Keyboard RGB Backlit with Blue Switches",
+      "category": "Electronics",
+      "ground_truth": "MIXED EVIDENCE",
+      "predicted": "CONSISTENT",
+      "match": false,
+      "overall_pri": 100.0,
+      "text_pri": 100.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_m03",
+      "title": "Winter Waterproof Thermal Snow Jacket with Detachable Hood",
+      "category": "Apparel",
+      "ground_truth": "MIXED EVIDENCE",
+      "predicted": "CONSISTENT",
+      "match": false,
+      "overall_pri": 100.0,
+      "text_pri": 100.0,
+      "visual_pri": null,
+      "coverage": 1.0,
+      "claims_count": 1,
+      "discrepancies": []
+    },
+    {
+      "product_id": "bench_m04",
+      "title": "Memory Foam Orthopedic Pillow with Breathable Bamboo Cover",
+      "category": "Home",
+      "ground_truth": "MIXED EVIDENCE",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": false,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 0,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_m05",
+      "title": "Ergonomic Mesh Office Desk Chair with Lumbar Support",
+      "category": "Office",
+      "ground_truth": "MIXED EVIDENCE",
+      "predicted": "CONTRADICTORY",
+      "match": false,
+      "overall_pri": 10.0,
+      "text_pri": 10.0,
+      "visual_pri": null,
+      "coverage": 0.5,
+      "claims_count": 2,
+      "discrepancies": [
+        "Claim 'Quick 15-minute easy assembly with included tools.' contradicted by customer feedback: \"The screw holes did not align properly, took over an hour to assemble\""
+      ]
+    },
+    {
+      "product_id": "bench_i01",
+      "title": "Solar Powered Wireless Outdoor Security Camera 2K Color Night Vision",
+      "category": "Electronics",
+      "ground_truth": "INSUFFICIENT EVIDENCE",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": true,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 4,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_i02",
+      "title": "Organic Cold-Pressed Rosemary Essential Oil 60ml for Hair Growth",
+      "category": "Health",
+      "ground_truth": "INSUFFICIENT EVIDENCE",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": true,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_i03",
+      "title": "Precision Electric Coffee Grinder with 35 Grind Settings",
+      "category": "Kitchen",
+      "ground_truth": "INSUFFICIENT EVIDENCE",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": true,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_i04",
+      "title": "Cordless Rotary Tool Kit with 50 Accessories and Variable Speed",
+      "category": "Tools",
+      "ground_truth": "INSUFFICIENT EVIDENCE",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": true,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 2,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    },
+    {
+      "product_id": "bench_i05",
+      "title": "Digital Tire Pressure Gauge 150 PSI with Backlit LCD Screen",
+      "category": "Automotive",
+      "ground_truth": "INSUFFICIENT EVIDENCE",
+      "predicted": "INSUFFICIENT EVIDENCE",
+      "match": true,
+      "overall_pri": 50.0,
+      "text_pri": 50.0,
+      "visual_pri": null,
+      "coverage": 0.0,
+      "claims_count": 1,
+      "discrepancies": [
+        "Only 0% of claims had relevant customer evidence. Insufficient data to conclude."
+      ]
+    }
+  ]
+}
