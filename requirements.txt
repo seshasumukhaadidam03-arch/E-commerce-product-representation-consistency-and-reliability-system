@@ -1,0 +1,29 @@
+# Core dependencies for the E-Commerce Consistency Assessment System
+# Install: pip install -r requirements.txt
+
+# Data handling
+pandas>=2.0
+numpy>=1.24
+
+# NLP - Sentence embeddings for semantic search
+sentence-transformers>=3.0
+
+# NLP - NLI classification (Support / Contradict / Neutral)
+transformers>=4.40
+
+# Deep learning backend (required by sentence-transformers and transformers)
+torch>=2.0
+
+# LLM API for claim extraction
+google-genai>=1.0
+
+# Image processing for visual consistency checks
+opencv-python>=4.8
+scikit-image>=0.22
+Pillow>=10.0
+
+# Web dashboard
+streamlit>=1.35
+
+# Dataset access
+datasets>=2.19

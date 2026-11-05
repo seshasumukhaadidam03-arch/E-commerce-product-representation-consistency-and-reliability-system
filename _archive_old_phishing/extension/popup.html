@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0d6efd;
+      margin: 0;
+    }
+    .badge {
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 4px;
+      color: #ffffff;
+    }
+    .badge-active {
+      background-color: #198754;
+    }
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin-bottom: 12px;
+    }
+    .label {
+      font-size: 11px;
+      color: #6c757d;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .value {
+      font-size: 13px;
+      font-weight: 500;
+      word-break: break-all;
+    }
+    .status-text {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .status-safe {
+      color: #198754;
+    }
+    .status-warning {
+      color: #dc3545;
+    }
+    button {
+      width: 100%;
+      padding: 8px 12px;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    button:hover {
+      background-color: #0b5ed7;
+    }
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: #6c757d;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="title">AI Phishing Shield</h1>
+    <span class="badge badge-active">Active</span>
+  </div>
+
+  <div class="card">
+    <div class="label">Current Website</div>
+    <div class="value" id="current-url">Loading URL...</div>
+  </div>
+
+  <div class="card" id="scan-card">
+    <div class="label">Shield Analysis</div>
+    <div class="status-text" id="status-display">Ready to scan.</div>
+    <button id="btn-scan">Scan Now</button>
+  </div>
+
+  <div class="footer">
+    AI Phishing Detection System v1.0.0
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

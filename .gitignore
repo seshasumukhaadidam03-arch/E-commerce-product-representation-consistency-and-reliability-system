@@ -1,0 +1,7 @@
+# Security: Ignore environment variables
+.env
+
+# Python specific
+__pycache__/
+*.py[cod]
+venv/

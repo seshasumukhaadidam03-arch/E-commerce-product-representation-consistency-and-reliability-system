@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Deceptive Site Ahead!</title>
+  <style>
+    body {
+      background-color: #2b0000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      background-color: #1a0000;
+      border: 2px solid #ff4444;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      text-align: left;
+    }
+    .icon {
+      font-size: 64px;
+      color: #ff4444;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 16px 0;
+      color: #ff4444;
+      font-weight: 700;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #cccccc;
+      margin: 0 0 24px 0;
+    }
+    .url-box {
+      background-color: #330000;
+      border: 1px solid #550000;
+      padding: 12px;
+      border-radius: 6px;
+      font-family: monospace;
+      word-break: break-all;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #ff8888;
+    }
+    .confidence {
+      font-weight: bold;
+      color: #ffaa66;
+    }
+    .btn-group {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.2s;
+    }
+    .btn-safe {
+      background-color: #ff4444;
+      color: #ffffff;
+    }
+    .btn-safe:hover {
+      background-color: #cc0000;
+    }
+    .btn-bypass {
+      background-color: transparent;
+      color: #aaaaaa;
+      text-decoration: underline;
+      padding: 0;
+      font-size: 14px;
+    }
+    .btn-bypass:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">⚠️</div>
+    <h1>Deceptive Site Ahead</h1>
+    <p>
+      AI Phishing Shield has intercepted this page. The system's machine learning model has flagged this website as a potential phishing clone designed to steal your logins, passwords, or personal information.
+    </p>
+    <div class="url-box">
+      URL: <span id="url-text">Loading...</span><br>
+      AI Confidence: <span id="confidence-text" class="confidence">--</span>
+    </div>
+    <div class="btn-group">
+      <button class="btn-safe" id="btn-back">Back to Safety</button>
+      <button class="btn-bypass" id="btn-proceed">Proceed anyway (unsafe)</button>
+    </div>
+  </div>
+
+  <script>
+    // Extract query parameters
+    const params = new URLSearchParams(window.location.search);
+    const originalUrl = params.get("url") || "Unknown URL";
+    const confidence = params.get("confidence") || "0";
+
+    document.getElementById("url-text").textContent = originalUrl;
+    document.getElementById("confidence-text").textContent = confidence + "%";
+
+    // Handle "Back to Safety"
+    document.getElementById("btn-back").addEventListener("click", () => {
+      window.location.href = "https://www.google.com";
+    });
+
+    // Handle "Proceed anyway"
+    document.getElementById("btn-proceed").addEventListener("click", () => {
+      chrome.runtime.sendMessage({
+        action: "bypass",
+        url: originalUrl
+      });
+    });
+  </script>
+</body>
+</html>

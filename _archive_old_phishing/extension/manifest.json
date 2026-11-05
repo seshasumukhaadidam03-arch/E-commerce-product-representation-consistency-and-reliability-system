@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AI Phishing Shield",
+  "version": "1.0.0",
+  "description": "Protects you from phishing scams in real time using local and server-side AI detection.",
+  "permissions": [
+    "webNavigation",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Phishing Shield"
+  }
+}
