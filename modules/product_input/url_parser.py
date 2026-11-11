@@ -28,17 +28,47 @@ class ProductURLExtractor:
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
         }
 
+    def sanitize_url(self, raw_url: str) -> str:
+        """
+        Cleans markdown hyperlinks, removes tracking query parameters,
+        and canonicalizes Amazon/Flipkart URLs down to clean product URLs.
+        Example: [www.amazon.in](http://www.amazon.in/dp/...) -> https://www.amazon.in/dp/...
+        """
+        url = raw_url.strip()
+
+        # Handle markdown link formats: [title](url) or [url](url)
+        md_match = re.search(r"\((https?://[^\)]+)\)", url)
+        if md_match:
+            url = md_match.group(1).strip()
+        else:
+            # Strip square brackets or angle brackets
+            url = re.sub(r"[\[\]<>]", "", url).strip()
+
+        # Ensure scheme is present
+        if not url.startswith("http://") and not url.startswith("https://"):
+            url = "https://" + url
+
+        # Canonicalize Amazon URLs to https://www.amazon.in/dp/ASIN
+        asin_match = re.search(r"/(?:dp|gp/product)/([A-Z0-9]{10})", url)
+        if asin_match:
+            domain = "amazon.in" if "amazon.in" in url else "amazon.com"
+            url = f"https://www.{domain}/dp/{asin_match.group(1)}"
+
+        return url
+
     def validate_url(self, url: str) -> bool:
         """Checks if URL is well-formed and uses HTTP/HTTPS."""
         try:
-            parsed = urllib.parse.urlparse(url.strip())
+            cleaned = self.sanitize_url(url)
+            parsed = urllib.parse.urlparse(cleaned)
             return parsed.scheme in ["http", "https"] and bool(parsed.netloc)
         except Exception:
             return False
 
     def identify_domain(self, url: str) -> str:
         """Identifies domain or marks as generic."""
-        netloc = urllib.parse.urlparse(url.strip()).netloc.lower()
+        cleaned = self.sanitize_url(url)
+        netloc = urllib.parse.urlparse(cleaned).netloc.lower()
         for domain in SUPPORTED_DOMAINS:
             if domain in netloc:
                 return domain
@@ -49,12 +79,13 @@ class ProductURLExtractor:
         Retrieves accessible HTML and parses structured product representations.
         Returns UnifiedProductInput schema with source tracking.
         """
-        if not self.validate_url(url):
+        clean_url = self.sanitize_url(url)
+        if not self.validate_url(clean_url):
             raise ValueError(f"Invalid product URL provided: '{url}'")
 
-        domain = self.identify_domain(url)
+        domain = self.identify_domain(clean_url)
         try:
-            response = requests.get(url, headers=self.headers, timeout=self.timeout)
+            response = requests.get(clean_url, headers=self.headers, timeout=12)
             response.raise_for_status()
             html_content = response.text
         except requests.RequestException as e:
