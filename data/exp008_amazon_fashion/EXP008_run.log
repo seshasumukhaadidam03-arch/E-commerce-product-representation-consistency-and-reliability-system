@@ -1,0 +1,19 @@
+Metadata records read: 826,108
+Products with >= 3 bullets: 112,345  (52s)
+Review records read: 2,500,939  (41s)
+{
+  "category": "Amazon_Fashion",
+  "dry_run_max_lines": null,
+  "metadata_records": 826108,
+  "review_records": 2500939,
+  "products_with_min_features": 112345,
+  "products_with_any_review": 112313,
+  "median_reviews_per_product": 1,
+  "share_of_reviews_with_photos": 0.0628,
+  "products_ge_20_reviews": 4235,
+  "products_ge_20_reviews_and_ge_3_photo_reviews": 1737
+}
+high(>=4.2)    pool= 2,518  picked=20  with_photos=20
+low(<3.5)      pool=   296  picked=20  with_photos=20
+mid(3.5-4.2)   pool= 1,421  picked=20  with_photos=20
+Saved 60 products and 4,929 reviews to /home/claude/exp008/out

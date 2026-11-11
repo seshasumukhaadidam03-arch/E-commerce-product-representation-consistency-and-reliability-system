@@ -1,7 +1,30 @@
-# Security: Ignore environment variables
+# ---- Secrets (never commit API keys) ----
 .env
+.env.*
+!.env.example
 
-# Python specific
+# ---- Python ----
 __pycache__/
 *.py[cod]
 venv/
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# ---- Third-party data (Amazon Reviews 2023) ----
+# Keep the scripts, summaries and frozen ASIN lists in Git so results are
+# reproducible, but do not redistribute the raw review/product text.
+data/**/reviews.jsonl
+data/**/products.jsonl
+
+# ---- Large model / cache files ----
+models/cache/
+*.pt
+*.bin
+*.safetensors

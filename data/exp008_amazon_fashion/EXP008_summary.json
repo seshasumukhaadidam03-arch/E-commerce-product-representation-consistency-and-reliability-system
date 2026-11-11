@@ -1,0 +1,12 @@
+{
+  "category": "Amazon_Fashion",
+  "dry_run_max_lines": null,
+  "metadata_records": 826108,
+  "review_records": 2500939,
+  "products_with_min_features": 112345,
+  "products_with_any_review": 112313,
+  "median_reviews_per_product": 1,
+  "share_of_reviews_with_photos": 0.0628,
+  "products_ge_20_reviews": 4235,
+  "products_ge_20_reviews_and_ge_3_photo_reviews": 1737
+}
