@@ -28,3 +28,6 @@ models/cache/
 *.pt
 *.bin
 *.safetensors
+
+# ---- Annotation workbooks contain review text; labels are exported to CSV (IDs + labels only) ----
+data/annotation/**/*.xlsx
