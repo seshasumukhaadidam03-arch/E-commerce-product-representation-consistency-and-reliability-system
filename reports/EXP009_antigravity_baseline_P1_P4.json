@@ -1,0 +1,363 @@
+{
+ "P4": {
+  "product_id": "B01N4I1UDY",
+  "title": "Travel Backpack Ucharge 50L Waterproof Hiking Backpack Outdoor Sport Daypack with a Rain Cover for Climbing Mountaineering Fishing Travel Cycling(Orange)",
+  "overall_pri": 52.6,
+  "text_pri": 52.6,
+  "visual_pri": null,
+  "classification": "CONTRADICTORY",
+  "coverage": 1.0,
+  "total_claims": 1,
+  "evaluated_claims": 1,
+  "claims": [
+   {
+    "claim": {
+     "claim_id": "claim_1",
+     "attribute": "material",
+     "text": "Nylon lining",
+     "value": "Nylon",
+     "confidence": 0.85,
+     "source": "rule_extractor"
+    },
+    "status": "Mixed Evidence",
+    "support_count": 0,
+    "contradict_count": 2,
+    "neutral_count": 3,
+    "consistency_percentage": 60.0,
+    "evidence": [
+     {
+      "sentence": "Great material,and so many compartments and pockets",
+      "review_id": "rev_29",
+      "relevance_score": 0.491,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 30.2,
+       "Support": 0.2,
+       "Neutral": 69.5
+      }
+     },
+     {
+      "sentence": "It is super lightweight fabric and has zero form to it which has the bonus of you can shove quite a bit into it",
+      "review_id": "rev_17",
+      "relevance_score": 0.463,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 4.2,
+       "Support": 1.1,
+       "Neutral": 94.7
+      }
+     },
+     {
+      "sentence": "Pockets and exterior developed holes just after 2 years of little use (~5 trips)",
+      "review_id": "rev_5",
+      "relevance_score": 0.376,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 71.7,
+       "Support": 1.2,
+       "Neutral": 27.2
+      }
+     },
+     {
+      "sentence": "Very well constructed of nice sturdy material",
+      "review_id": "rev_18",
+      "relevance_score": 0.37,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 28.3,
+       "Support": 0.7,
+       "Neutral": 71.0
+      }
+     },
+     {
+      "sentence": "Comfy but Not Durable",
+      "review_id": "rev_5",
+      "relevance_score": 0.366,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 97.0,
+       "Support": 0.5,
+       "Neutral": 2.5
+      }
+     }
+    ]
+   }
+  ],
+  "visual_assessment": {
+   "seller_image_url": null,
+   "customer_image_url": null,
+   "color_similarity": 0.0,
+   "structural_similarity": 0.0,
+   "visual_consistency_score": 0.0,
+   "observations": [
+    "Insufficient visual representations provided (missing seller or customer image)."
+   ],
+   "available": false
+  },
+  "key_discrepancies": [
+   "Claim 'Nylon lining' contradicted by customer feedback: \"Pockets and exterior developed holes just after 2 years of little use (~5 trips)\"",
+   "Claim 'Nylon lining' contradicted by customer feedback: \"Comfy but Not Durable\""
+  ],
+  "supporting_reasons": [],
+  "provenance_metadata": {
+   "source_type": "sample",
+   "source_url": null,
+   "cleaned_reviews_count": 95,
+   "extracted_claims_count": 1
+  }
+ },
+ "P1": {
+  "product_id": "B012P8Y1YU",
+  "title": "DASH Co. Slim ID Wallet Handmade Leather Credit Card Case With ID Window",
+  "overall_pri": 60.0,
+  "text_pri": 60.0,
+  "visual_pri": null,
+  "classification": "CONTRADICTORY",
+  "coverage": 1.0,
+  "total_claims": 3,
+  "evaluated_claims": 3,
+  "claims": [
+   {
+    "claim": {
+     "claim_id": "claim_1",
+     "attribute": "durability",
+     "text": "\u2605 DURABLE CONSTRUCTION - Featuring Premium Black Canvas and precision oiled edges.",
+     "value": "DURABLE",
+     "confidence": 0.85,
+     "source": "rule_extractor"
+    },
+    "status": "Mixed Evidence",
+    "support_count": 0,
+    "contradict_count": 1,
+    "neutral_count": 4,
+    "consistency_percentage": 80.0,
+    "evidence": [
+     {
+      "sentence": "sturdy and not too shabby",
+      "review_id": "rev_6",
+      "relevance_score": 0.382,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 18.7,
+       "Support": 0.2,
+       "Neutral": 81.2
+      }
+     },
+     {
+      "sentence": "Excellent perfect quality and size just what I wanted",
+      "review_id": "rev_10",
+      "relevance_score": 0.355,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 12.2,
+       "Support": 0.2,
+       "Neutral": 87.7
+      }
+     },
+     {
+      "sentence": "This revealed the materials underneath - paper",
+      "review_id": "rev_13",
+      "relevance_score": 0.343,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 98.1,
+       "Support": 0.1,
+       "Neutral": 1.9
+      }
+     },
+     {
+      "sentence": "I would give this 4-5 stars (just below 5 b/c of the tacky branding) if it could've held up for a year but 2 months is just not worth it",
+      "review_id": "rev_7",
+      "relevance_score": 0.328,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 8.6,
+       "Support": 0.2,
+       "Neutral": 91.2
+      }
+     },
+     {
+      "sentence": "<br />Great value for the price and my husband is happy with the purchase",
+      "review_id": "rev_6",
+      "relevance_score": 0.292,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 12.5,
+       "Support": 0.2,
+       "Neutral": 87.3
+      }
+     }
+    ]
+   },
+   {
+    "claim": {
+     "claim_id": "claim_2",
+     "attribute": "capacity",
+     "text": "\u2605 ORGANIZED - 3 compartment system card holder will keep your cards and cash neat",
+     "value": "3 compartment",
+     "confidence": 0.85,
+     "source": "rule_extractor"
+    },
+    "status": "Mixed Evidence",
+    "support_count": 0,
+    "contradict_count": 2,
+    "neutral_count": 3,
+    "consistency_percentage": 60.0,
+    "evidence": [
+     {
+      "sentence": "Holds all the cards I carry around comfortably, and I can store something extra in the middle pocket (cash/card/etc",
+      "review_id": "rev_21",
+      "relevance_score": 0.648,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 10.3,
+       "Support": 28.9,
+       "Neutral": 60.8
+      }
+     },
+     {
+      "sentence": "I'm sure I can put more cards inside, but that would defeat the purpose of buying a very small and slim wallet",
+      "review_id": "rev_2",
+      "relevance_score": 0.559,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 50.4,
+       "Support": 2.4,
+       "Neutral": 47.1
+      }
+     },
+     {
+      "sentence": "It's just the right size to hold my ID and insurance cards, a couple of bills, and the two to three credit cards I always carry",
+      "review_id": "rev_16",
+      "relevance_score": 0.528,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 6.9,
+       "Support": 31.6,
+       "Neutral": 61.5
+      }
+     },
+     {
+      "sentence": "I only carry like 2 cards and my license, so this wallet was made for me",
+      "review_id": "rev_12",
+      "relevance_score": 0.491,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 48.4,
+       "Support": 6.2,
+       "Neutral": 45.4
+      }
+     },
+     {
+      "sentence": "My previous leather wallet lasted well over 10 years and only gave out because it was stretched out enough the cards would fall out",
+      "review_id": "rev_19",
+      "relevance_score": 0.462,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 81.0,
+       "Support": 0.8,
+       "Neutral": 18.1
+      }
+     }
+    ]
+   },
+   {
+    "claim": {
+     "claim_id": "claim_3",
+     "attribute": "feature",
+     "text": "\u2605 ID POCKET - Show your ID through the transparent window with a simple flip",
+     "value": null,
+     "confidence": 0.85,
+     "source": "rule_extractor"
+    },
+    "status": "Mixed Evidence",
+    "support_count": 0,
+    "contradict_count": 2,
+    "neutral_count": 3,
+    "consistency_percentage": 60.0,
+    "evidence": [
+     {
+      "sentence": "Nice design, like the ID window, but it fell apart in 12 months",
+      "review_id": "rev_19",
+      "relevance_score": 0.363,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 11.7,
+       "Support": 0.9,
+       "Neutral": 87.4
+      }
+     },
+     {
+      "sentence": "I love that I can put it in my front pocket and I don't notice it's there",
+      "review_id": "rev_16",
+      "relevance_score": 0.36,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 41.6,
+       "Support": 2.4,
+       "Neutral": 56.0
+      }
+     },
+     {
+      "sentence": "<br /><br />About a month after using the Havok ID wallet one of the sealed edges came undone",
+      "review_id": "rev_13",
+      "relevance_score": 0.356,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 94.7,
+       "Support": 0.4,
+       "Neutral": 4.9
+      }
+     },
+     {
+      "sentence": "The Dash Slime ID wallet is very good in handed",
+      "review_id": "rev_8",
+      "relevance_score": 0.342,
+      "verdict": "Consistent",
+      "confidence_scores": {
+       "Contradiction": 47.4,
+       "Support": 3.7,
+       "Neutral": 48.8
+      }
+     },
+     {
+      "sentence": "<br /><br />If you're looking for a small flat wallet, i haven't found one better than this",
+      "review_id": "rev_17",
+      "relevance_score": 0.324,
+      "verdict": "Contradiction",
+      "confidence_scores": {
+       "Contradiction": 75.1,
+       "Support": 1.7,
+       "Neutral": 23.2
+      }
+     }
+    ]
+   }
+  ],
+  "visual_assessment": {
+   "seller_image_url": null,
+   "customer_image_url": null,
+   "color_similarity": 0.0,
+   "structural_similarity": 0.0,
+   "visual_consistency_score": 0.0,
+   "observations": [
+    "Insufficient visual representations provided (missing seller or customer image)."
+   ],
+   "available": false
+  },
+  "key_discrepancies": [
+   "Claim '\u2605 DURABLE CONSTRUCTION - Featuring Premium Black Canvas and precision oiled edges.' contradicted by customer feedback: \"This revealed the materials underneath - paper\"",
+   "Claim '\u2605 ORGANIZED - 3 compartment system card holder will keep your cards and cash neat' contradicted by customer feedback: \"I'm sure I can put more cards inside, but that would defeat the purpose of buying a very small and slim wallet\"",
+   "Claim '\u2605 ORGANIZED - 3 compartment system card holder will keep your cards and cash neat' contradicted by customer feedback: \"My previous leather wallet lasted well over 10 years and only gave out because it was stretched out enough the cards would fall out\"",
+   "Claim '\u2605 ID POCKET - Show your ID through the transparent window with a simple flip' contradicted by customer feedback: \"<br /><br />About a month after using the Havok ID wallet one of the sealed edges came undone\"",
+   "Claim '\u2605 ID POCKET - Show your ID through the transparent window with a simple flip' contradicted by customer feedback: \"<br /><br />If you're looking for a small flat wallet, i haven't found one better than this\""
+  ],
+  "supporting_reasons": [],
+  "provenance_metadata": {
+   "source_type": "sample",
+   "source_url": null,
+   "cleaned_reviews_count": 73,
+   "extracted_claims_count": 3
+  }
+ }
+}
